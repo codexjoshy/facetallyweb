@@ -4,6 +4,8 @@ import {
   SectionTwo,
   SectionThree,
   SectionFour,
+  SectionFive,
+  Footer,
 } from "./pages";
 
 function App() {
@@ -14,7 +16,8 @@ function App() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      <h1>Facetally App</h1>
+      <SectionFive />
+      <Footer />
     </div>
   );
 }
