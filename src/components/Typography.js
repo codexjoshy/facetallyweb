@@ -1,6 +1,8 @@
 const variants = {
-  display: "text-5xl font-bold leading-[4rem] text-white tracking-wide",
-  title: "text-2xl font-semibold ",
+  display: "text-5xl font-bold leading-[4rem] text-white tracking-tight",
+  header:
+    "text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl",
+  title: "text-lg leading-6 font-medium text-gray-900",
   body: "text-base text-white/70 leading-[1.5rem]",
   caption: "",
 };
