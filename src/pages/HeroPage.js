@@ -1,16 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { android, mockMatch } from "../assets";
+import { mockMatch, mock1 } from "../assets";
 import { Navbar, Container, Typography } from "../components";
 
 export const HeroPage = ({}) => {
   return (
     <section className="h-[45rem] w-full bg-[url('./assets/banner.svg')] object-cover object-center bg-no-repeat ">
       <Navbar />
-      <Container
-        as="div"
-        className="w-full h-[20rem] grid grid-cols-2 mt-24 gap-5 py-5"
-      >
-        <div>
+      <Container as="div" className="w-full grid grid-cols-2 mt-24 gap-5 py-5">
+        <div className="m">
           <Typography as="h1" variant="display">
             Same Face, Online and Offline
           </Typography>
@@ -73,8 +70,12 @@ export const HeroPage = ({}) => {
             </a>
           </div>
         </div>
-        <div>
-          <img src={mockMatch} alt="" className="h-full w-full relative" />
+        <div className="flex-1">
+          <img
+            src={mockMatch}
+            alt=""
+            className="h-full w-full relative -left-20"
+          />
         </div>
       </Container>
     </section>

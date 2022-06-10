@@ -1,6 +1,6 @@
 const variants = {
   display: "text-5xl font-bold leading-[4rem] text-white tracking-wide",
-  title: "",
+  title: "text-2xl font-semibold ",
   body: "text-base text-white/70 leading-[1.5rem]",
   caption: "",
 };

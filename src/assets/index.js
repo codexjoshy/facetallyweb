@@ -6,9 +6,10 @@
 // import twitter from "./twitter.svg";
 import android from "./android.png";
 import apple from "./apple.png";
-// import frame from "./frame.png";
-// import mock1 from "./mock1.png";
-// import mock3 from "./mock3.png";
+import frame from "./frame.png";
+import mock1 from "./mock1.png";
+import mock1Svg from "./mock1.svg";
+import mock3 from "./mock3.png";
 // import mockProfile from "./mock-profile.png";
 // import mockSwipe from "./mock-swipe.png";
 // import mockUploads from "./mock-uploads.png";
@@ -27,9 +28,10 @@ export {
   // twitter,
   android,
   apple,
-  // frame,
-  // mock1,
-  // mock3,
+  frame,
+  mock1,
+  mock3,
+  mock1Svg,
   // mockProfile,
   // mockSwipe,
   // mockUploads,
