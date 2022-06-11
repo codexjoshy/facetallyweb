@@ -4,7 +4,7 @@ import { Navbar, Container, Typography } from "../components";
 
 export const HeroPage = ({}) => {
   return (
-    <section className="h-[45rem] w-full bg-[url('./assets/banner.svg')] object-cover object-center bg-no-repeat ">
+    <section className="h-[40rem] w-full bg-[url('./assets/banner.svg')] object-cover object-center bg-no-repeat bg-[#664753] mb-24">
       <Navbar />
       <Container
         as="div"

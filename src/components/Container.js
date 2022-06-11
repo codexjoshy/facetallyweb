@@ -6,6 +6,6 @@ const variants = {
 export const Container = ({ as, className, children }) => {
   const Component = variants[as];
   return (
-    <Component className={`lg:px-20 px-5 ${className}`}>{children}</Component>
+    <Component className={`px-5 lg:px-20 ${className}`}>{children}</Component>
   );
 };

@@ -54,7 +54,7 @@ export const Navbar = () => {
             Download
           </button>
           <MenuIcon
-            className="h-5 w-5 text-white"
+            className="h-5 w-5 text-white lg:hidden"
             onClick={() => setShowMenu(!showMenu)}
           />
         </div>
