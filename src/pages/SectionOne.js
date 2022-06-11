@@ -3,7 +3,7 @@ import { Container, Typography } from "../components";
 
 export const SectionOne = () => {
   return (
-    <Container as="section" className="grid  grid-cols-3 gap-4 w-full mb-24">
+    <Container as="section" className="lg:grid grid-cols-3 gap-4 w-full mb-24">
       <div className="flex flex-col h-full justify-center ">
         <Typography as="h4" variant="header" className="mb-3">
           Like you, attractive singles.
@@ -17,7 +17,7 @@ export const SectionOne = () => {
           Download
         </button>
       </div>
-      <div className="col-span-2">
+      <div className="col-span-2 mt-5 lg:mt-0">
         <img src={frame} className="h-full w-full" alt="" />
       </div>
     </Container>

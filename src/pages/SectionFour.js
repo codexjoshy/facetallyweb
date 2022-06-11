@@ -2,7 +2,7 @@ import { Container, Typography } from "../components";
 
 const NewsLetter = ({ title, body }) => {
   return (
-    <div>
+    <div className="mb-10 lg:mb-0">
       <Typography as="h3" variant="title">
         {title}
       </Typography>
@@ -43,7 +43,7 @@ export const SectionFour = () => {
           Your guide to dating and relationships all in one place.
         </Typography>
       </div>
-      <div className="grid grid-cols-2 pt-10 gap-3 gap-y-8">
+      <div className="lg:grid grid-cols-2 pt-10 gap-3 gap-y-8">
         {blog.map(({ title, body }, index) => (
           <NewsLetter {...{ key: index, title, body }} />
         ))}

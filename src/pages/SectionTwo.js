@@ -24,10 +24,10 @@ const FeatureItem = ({ title, body, icon }) => {
 export const SectionTwo = () => {
   return (
     <Container as="section" className="bg-white mb-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
         <div className="lg:text-center">
           <Typography variant="header" className="mt-2">
-            A better way to send money
+            A better way to find a date
           </Typography>
           <Typography
             variant="body"

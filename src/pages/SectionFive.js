@@ -8,7 +8,7 @@ export const SectionFive = () => {
       <Typography as="h4" variant="header" className="mb-3 text-center my-10">
         The No.1 trusted dating app
       </Typography>
-      <div className="grid grid-cols-3 w-full mt-10">
+      <div className="lg:grid grid-cols-3 w-full mt-10">
         <div className="col-span-2">
           <img src={mock3} className="h-full w-full" alt="" />
         </div>
@@ -17,7 +17,7 @@ export const SectionFive = () => {
             We have years of trusted matchmaking under our belts, with a
             dedicated Trust and Safety team by your side.
           </Typography>
-          <div class="mt-5 items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+          <div class="mt-5 items-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 w-fit lg:w-full">
             <a
               href="#"
               class="w-full sm:w-auto flex bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
