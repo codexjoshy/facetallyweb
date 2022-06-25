@@ -1,25 +1,26 @@
-import { logoSvg } from "../assets";
-import { Typography } from "../components";
+import { NavLink } from 'react-router-dom';
+import { logoSvg } from '../assets';
+import { Typography } from '../components';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+    <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100 banner02">
       <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <img src={logoSvg} className="mr-5 h-6 sm:h-9" alt="logo" />
-            <Typography className="max-w-xs mt-4 text-sm text-gray-600">
+            <Typography className="max-w-xs mt-4 text-sm text-white">
               Get past the hassle of not meeting the person you met online when
               you go on a date. What you see is what you get.
             </Typography>
-            <div className="flex mt-8 space-x-6 text-gray-600">
+            <div className="flex mt-8 space-x-6 text-white">
               <a
                 className="hover:opacity-75"
-                href
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="sr-only"> Facebook </span>
+                <span className="sr-only text-white"> Facebook </span>
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -35,7 +36,7 @@ export const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -55,7 +56,7 @@ export const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -71,7 +72,7 @@ export const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -91,7 +92,7 @@ export const Footer = () => {
               </a>
               <a
                 className="hover:opacity-75"
-                href
+                href="#"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -115,90 +116,97 @@ export const Footer = () => {
             <div>
               <p className="font-medium">Company</p>
               <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  About{" "}
-                </a>
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  Meet the Team{" "}
-                </a>
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  History{" "}
-                </a>
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  Careers{" "}
-                </a>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'link active text-white/70'
+                      : 'link text-white/70'
+                  }
+                >
+                  About
+                </NavLink>
               </nav>
             </div>
-            <div>
-              <p className="font-medium">Services</p>
-              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  1on1 Coaching{" "}
-                </a>
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  Company Review{" "}
-                </a>
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  Accounts Review{" "}
-                </a>
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  HR Consulting{" "}
-                </a>
-                <a className="hover:opacity-75" href>
-                  {" "}
-                  SEO Optimisation{" "}
-                </a>
-              </nav>
-            </div>
+
             <div>
               <p className="font-medium">Helpful Links</p>
-              <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a class="hover:opacity-75" href>
-                  {" "}
-                  Contact{" "}
-                </a>
-                <a class="hover:opacity-75" href>
-                  {" "}
-                  FAQs{" "}
-                </a>
-                <a class="hover:opacity-75" href>
-                  {" "}
-                  Live Chat{" "}
-                </a>
+              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'link active text-white/70'
+                      : 'link text-white/70'
+                  }
+                >
+                  Contact
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'link active text-white/70 hover:opacity-75'
+                      : 'link text-white/70'
+                  }
+                >
+                  FAQs
+                </NavLink>
               </nav>
             </div>
             <div>
-              <p class="font-medium">Legal</p>
-              <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a class="hover:opacity-75" href>
-                  {" "}
-                  Privacy Policy{" "}
-                </a>
-                <a class="hover:opacity-75" href>
-                  {" "}
-                  Terms &amp; Conditions{" "}
-                </a>
-                <a class="hover:opacity-75" href>
-                  {" "}
-                  Returns Policy{" "}
-                </a>
-                <a class="hover:opacity-75" href>
-                  {" "}
-                  Accessibility{" "}
-                </a>
+              <p className="font-medium">Legal</p>
+              <nav className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                <NavLink
+                  to="/legal"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'link active text-white/70 hover:opacity-75'
+                      : 'link text-white/70'
+                  }
+                >
+                  Privacy Policy
+                </NavLink>
+                <NavLink
+                  to="/terms"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'link active text-white/70 hover:opacity-75'
+                      : 'link text-white/70'
+                  }
+                >
+                  {' '}
+                  Terms &amp; Conditions{' '}
+                </NavLink>
+                <NavLink
+                  to="/privacy"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'link active text-white/70 hover:opacity-75'
+                      : 'link text-white/70'
+                  }
+                >
+                  {' '}
+                  Privacy Policy{' '}
+                </NavLink>
+                <NavLink
+                  to="/access"
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'link active text-white/70 hover:opacity-75'
+                      : 'link text-white/70'
+                  }
+                >
+                  {' '}
+                  Accessibility{' '}
+                </NavLink>
               </nav>
             </div>
           </div>
         </div>
-        <p class="mt-8 text-xs text-gray-800">© 2022 Facetally</p>
+        <p className="mt-8 text-xs text-gray-800 text-center">
+          © 2022 Facetally
+        </p>
       </div>
     </footer>
   );

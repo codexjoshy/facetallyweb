@@ -53,6 +53,11 @@
   animation-fill-mode: both;
 }
 
+.active {
+  color: var(--active);
+  font-weight: 700;
+}
+
 @keyframes fadeLeftMini {
   0% {
     opacity: 0;
@@ -73,4 +78,33 @@
     opacity: 1;
     transform: translateZ(0);
   }
+}
+
+:root {
+  --glaass: rgba(15, 10, 10, 0.8);
+  --active: rgba(15, 10, 10, 0.8);
+}
+.App {
+  background: linear-gradient(
+    106.37deg,
+    /* #200518 29.63%,
+    #fa8473 51.55%,
+    #f7b5a8 90.85% */ #200518 30.85%,
+    #fa8473 70.55%,
+    #fa8473 29.63%
+  );
+  /* display: flex; */
+  /* height: 100vh; 
+  align-items: center;
+  justify-content: center;*/
+}
+.AppGlass {
+  /* display: block; */
+  /* height: 100%; */
+  width: 100%;
+  /* border-radius: 2rem; */
+  background: var(--glaass);
+  /* overflow: hidden; */
+  /* grid-template-columns: 100rem auto 20rem; */
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5)*/
 }

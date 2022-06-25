@@ -1,25 +1,21 @@
-import {
-  HeroPage,
-  SectionOne,
-  SectionTwo,
-  SectionThree,
-  SectionFour,
-  SectionFive,
-  Footer,
-} from "./pages";
+import { Contact, Home, Error, About } from './pages';
+import './index.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SharedLayout from './layouts/SharedLayout';
 
-function App() {
+function AppRoute() {
   return (
-    <div className="App">
-      <HeroPage />
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <SectionFive />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default AppRoute;
